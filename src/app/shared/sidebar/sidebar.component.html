@@ -1,0 +1,30 @@
+<div class="text-white border-right p-3" id="sidebar">
+  <div id="sideFijo">
+
+    <h3 class="text-light">
+      Gifs App
+    </h3>
+    <hr class="text-white">
+    <h4 class="text-dark ">Búsquedas recientes:</h4>
+    <div class="list-group list-reset m-2" >
+         
+      <a 
+      href="#" 
+      class="list-group-item list-group-item-action"
+      *ngFor="let item of historial; let i = index"
+      (click)="buscar(item)">
+      {{item | titlecase }}
+      </a>
+    </div>
+
+    <div class="cantidadResultados">
+    <h4 class="text-dark text-center small">¿Cuántos resultados querés ver?</h4>
+
+    <div id="botones" class="p-2">
+      <button type="button" class="btn">5</button>
+      <button type="button" class="btn">10</button>
+      <button type="button" class="btn">15</button>
+    </div>
+    </div>
+  </div>
+  </div>

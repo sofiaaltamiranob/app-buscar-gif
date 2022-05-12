@@ -1,0 +1,33 @@
+html, body{
+    height: 100%;
+    font-size: 14;
+}
+
+h4{
+    font-size:large;
+}
+
+#sidebar{
+    background-color: #B23CFD;
+    background: linear-gradient(rgba(166, 192, 254, 0.9), rgba(246, 128, 132, 0.9));
+    height: 100%;
+    min-height: 100vh;
+    max-height: 100%;
+
+}
+
+.cantidadResultados{
+    position: relative;
+    bottom: 100;
+}
+
+#sideFijo{
+    position: sticky;
+    top: 0;
+}
+
+
+#botones button{
+    background-color: rgb(235, 172, 219);
+    margin: 3%;
+}

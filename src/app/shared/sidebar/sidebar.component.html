@@ -1,4 +1,4 @@
-<div class="text-white border-right p-3" id="sidebar">
+<div class="text-white border-right p-3 col-12 col-md 6" id="sidebar" >
   <div id="sideFijo">
 
     <h3 class="text-light">
@@ -16,15 +16,24 @@
       {{item | titlecase }}
       </a>
     </div>
+  </div>
+
 
     <div class="cantidadResultados">
     <h4 class="text-dark text-center small">¿Cuántos resultados querés ver?</h4>
 
     <div id="botones" class="p-2">
-      <button type="button" class="btn">5</button>
-      <button type="button" class="btn">10</button>
-      <button type="button" class="btn">15</button>
-    </div>
+
+      <button 
+      type="button" class="btn"
+      (click)="cantidadLimite('5')">5</button>
+
+      <button type="button" class="btn"
+      (click)="cantidadLimite('10')">10</button>
+
+      <button type="button" class="btn"
+      (click)="cantidadLimite('15')">15</button>
+
     </div>
   </div>
   </div>

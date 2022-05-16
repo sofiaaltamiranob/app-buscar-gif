@@ -1,31 +1,29 @@
 html, body{
     height: 100%;
     font-size: 14;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-family: 'Poppins', sans-serif;
 }
 
 h4{
     font-size:large;
 }
 
+.form-control{
+    /* background-color: #B23CFD; */
+    background: linear-gradient(to right, rgba(166, 192, 254, 0.8), rgba(246, 128, 132, 0.9))
+}
+
 #sidebar{
     background-color: #B23CFD;
     background: linear-gradient(rgba(166, 192, 254, 0.9), rgba(246, 128, 132, 0.9));
     height: 100%;
-    min-height: 100vh;
-    max-height: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-
-.cantidadResultados{
-    position: relative;
-    bottom: 100;
-}
-
-#sideFijo{
-    position: sticky;
-    top: 0;
-}
-
 
 #botones button{
     background-color: rgb(235, 172, 219);

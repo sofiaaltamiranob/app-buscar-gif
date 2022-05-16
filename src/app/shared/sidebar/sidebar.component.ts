@@ -18,4 +18,8 @@ export class SidebarComponent  {
   this.gifServicio.buscarGifs(termino);
   }
 
+  cantidadLimite(limite: string){
+    this.gifServicio.cantidadResultados(limite);
+  }
+
 }
